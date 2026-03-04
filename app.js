@@ -108,7 +108,7 @@ async function fetchWeather() {
 
   if (cloud < 20 && precip === 0 && phase === 1) {
     
-    icon.innerHTML = `<img src="weather_icons/morning/sunny.png">`;
+    icon.innerHTML = `<img src="sunny.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Sunny`;
     card.classList.remove(...themeClasses);
@@ -117,7 +117,7 @@ async function fetchWeather() {
     subcat.classList.add("light");
   } else if (cloud < 20 && precip === 0 && phase === 0) {
     
-    icon.innerHTML = `<img src="weather_icons/night/nightmoon.png">`;
+    icon.innerHTML = `<img src="nightmoon.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Clear`;
     card.classList.remove(...themeClasses);
@@ -126,7 +126,7 @@ async function fetchWeather() {
     subcat.classList.add("dark");
   } else if (cloud >= 20 && cloud <= 60 && precip === 0 && phase === 1 && uv >= 3 && uv <= 6) {
     
-    icon.innerHTML = `<img src="weather_icons/morning/partialy.png">`;
+    icon.innerHTML = `<img src="partialy.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Partly Cloudy`;
     card.classList.remove(...themeClasses);
@@ -135,7 +135,7 @@ async function fetchWeather() {
     subcat.classList.add("light");
   } else if (cloud >= 20 && cloud <= 60 && precip === 0 && phase === 0) {
     
-    icon.innerHTML = `<img src="weather_icons/night/cloudymoon.png">`;
+    icon.innerHTML = `<img src="cloudymoon.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Partly Cloudy`;
     card.classList.remove(...themeClasses);
@@ -144,7 +144,7 @@ async function fetchWeather() {
     subcat.classList.add("dark");
   } else if (cloud > 60 && precip === 0 && visib > 5) {
     
-    icon.innerHTML = `<img src="weather_icons/cloudy.png">`;
+    icon.innerHTML = `<img src="cloudy.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Cloudy`;
     card.classList.remove(...themeClasses);
@@ -153,7 +153,7 @@ async function fetchWeather() {
     subcat.classList.add(phase == 1 ? "light" : "dark");
   } else if (precip > 0.1 && cloud > 50) {
     
-    icon.innerHTML = `<img src="weather_icons/rainy.png">`;
+    icon.innerHTML = `<img src="rainy.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Raining`;
     card.classList.remove(...themeClasses);
@@ -162,7 +162,7 @@ async function fetchWeather() {
     subcat.classList.add(phase == 1 ? "light" : "dark");
   } else if (precip > 2 && cloud > 70 && wind > 30 && humid > 80) {
     
-    icon.innerHTML = `<img src="weather_icons/stormy.png">`;
+    icon.innerHTML = `<img src="stormy.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Stormy`;
     card.classList.remove(...themeClasses);
@@ -171,7 +171,7 @@ async function fetchWeather() {
     subcat.classList.add(phase == 1 ? "light" : "dark");
   } else if (cloud >= 20 && visib < 6 && humid > 30) {
     
-    icon.innerHTML = `<img src="weather_icons/foggymist.png">`;
+    icon.innerHTML = `<img src="foggymist.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Mist`;
     card.classList.remove(...themeClasses);
@@ -180,7 +180,7 @@ async function fetchWeather() {
     subcat.classList.add(phase == 1 ? "light" : "dark");
   } else if (wind > 30 && gust > 40) {
     
-    icon.innerHTML = `<img src="weather_icons/windy.png">`;
+    icon.innerHTML = `<img src="windy.png">`;
     temper.innerText = `${temp}°C`;
     weath.innerText = `Windy`;
     card.classList.remove(...themeClasses);
